@@ -1,0 +1,83 @@
+.ul-card { }
+
+.ul-header {
+  background: var(--gray-50);
+  padding: 1rem 1.5rem;
+  border-bottom: 1.5px solid var(--gray-200);
+  display: flex; align-items: center; gap: .75rem;
+}
+.ul-header h2 { font-size: 1.2rem; font-weight: 700; color: var(--gray-900); }
+.ul-count-badge {
+  background: var(--primary); color: #fff;
+  font-size: .78rem; font-weight: 700;
+  padding: .2rem .65rem; border-radius: 999px;
+}
+
+.ul-empty {
+  padding: 4rem 2rem; text-align: center; color: var(--gray-400);
+}
+.ul-empty-icon { font-size: 3.5rem; margin-bottom: .75rem; line-height: 1; }
+.ul-empty p { font-size: .95rem; }
+
+.ul-table-wrap { overflow-x: auto; }
+
+.ul-table {
+  width: 100%; border-collapse: collapse;
+  font-size: .875rem;
+}
+.ul-table th {
+  background: var(--gray-100);
+  color: var(--gray-600); font-weight: 700;
+  padding: .7rem 1rem; text-align: left;
+  white-space: nowrap;
+  border-bottom: 2px solid var(--gray-200);
+  position: sticky; top: 0;
+}
+.ul-table td {
+  padding: .7rem 1rem;
+  border-bottom: 1px solid var(--gray-100);
+  vertical-align: middle;
+}
+.ul-table tbody tr:hover td { background: #f5f3ff; }
+.ul-table tbody tr:last-child td { border-bottom: none; }
+
+.ul-td-num   { color: var(--gray-400); font-weight: 600; width: 40px; }
+.ul-td-name  { font-weight: 600; color: var(--gray-900); white-space: nowrap; }
+.ul-td-email { color: var(--primary); font-size: .83rem; }
+
+/* Avatar */
+.ul-avatar {
+  width: 42px; height: 42px;
+  border-radius: 50%; object-fit: cover;
+  border: 2.5px solid var(--gray-200);
+  display: block;
+}
+.ul-avatar-ph {
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), #7c3aed);
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: .85rem;
+  flex-shrink: 0;
+}
+
+/* Gender */
+.ul-gender {
+  padding: .2rem .6rem; border-radius: 999px;
+  font-size: .78rem; font-weight: 700; white-space: nowrap;
+}
+.ul-gender-male   { background: #dbeafe; color: #1d4ed8; }
+.ul-gender-female { background: #fce7f3; color: #be185d; }
+.ul-gender-other  { background: #f3e8ff; color: #7e22ce; }
+
+/* Skills */
+.ul-skills { display: flex; flex-wrap: wrap; gap: .25rem; min-width: 160px; }
+.ul-skill-chip {
+  background: #ecfdf5; color: #065f46;
+  padding: .15rem .5rem; border-radius: 999px;
+  font-size: .72rem; font-weight: 600; white-space: nowrap;
+}
+
+/* Action buttons */
+.ul-actions { display: flex; gap: .4rem; }
